@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Ghogare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        :root {
+            --primary-color: #2e4053;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Education Section */
+        .education-item {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            margin-bottom: 2rem;
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        /* Experience Section */
+        .experience-card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--secondary-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        /* Project Section */
+        .project-card {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .education-item,
+            .project-card {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <h1>Vaishnavi Manoj Ghogare</h1>
+            <div class="contact-info">
+                <a href="tel:+917721925717">+91 7721925717</a>
+                <a href="mailto:">Gmail</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Academic Qualification</h2>
+            <div class="education-item">
+                <div>
+                    <h3>T.P.C.T. College of Engineering, Dharashiv</h3>
+                    <p>Bachelor of Technology in Computer Science and Engineering</p>
+                    <p>CGPA: 7.55 (Pursuing)</p>
+                </div>
+            </div>
+            <!-- Add other education items similarly -->
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience-card">
+                <h3>IIT Bombay Research Internship (2024-25)</h3>
+                <p class="date">January 2025</p>
+                <ul>
+                    <li>Developed Android app for elderly social interaction</li>
+                    <li>Conducted HCI research and usability studies</li>
+                    <li>Integrated fitness tracker APIs</li>
+                </ul>
+            </div>
+            <!-- Add other experiences -->
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C/C++</li>
+                    </ul>
+                </div>
+                <!-- Add other skill categories -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Face Recognition Attendance System</h3>
+                    <p>Python, OpenCV, Tkinter</p>
+                </div>
+                <div class="project-details">
+                    <ul>
+                        <li>Real-time image capture and profile registration</li>
+                        <li>CSV data storage and management</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add other projects -->
+        </section>
+
+        <!-- Add other sections (Leadership, Strengths, etc.) similarly -->
+
+    </main>
+</body>
+</html>
